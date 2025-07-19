@@ -4,7 +4,7 @@ This document focuses on analyzing restaurant reviews from Hyderabad, India, usi
 
 ## Purpose
 
-The primary objective of this project is to extract meaningful insights from a dataset of Zomato reviews for Hyderabad's restaurants. This involves:
+The primary objective of this project is to extract meaningful insights from a dataset of Zomato reviews for Hyderabad's restaurants, which involves: 
 * Analyzing restaurant characteristics and review metadata.
 * Categorizing cuisine types using multilabel classification.
 * Predicting restaurant ratings based on sentiment analysis.
@@ -25,7 +25,7 @@ The project followed the CRISP-DM methodology, ensuring a structured and compreh
 * **Restaurants Dataset:** Identified most common cuisine types (North Indian, Chinese) and average dining cost.
 * **Reviews Dataset:** Observed a dominance of extreme ratings (1, 4, 5) and a mean rating suggesting overrating. Most reviews are submitted late in the evening during summer.
 * **Initial Preprocessing:** Dropped irrelevant columns (`Links`, `Timings`, metadata) and converted data types for efficiency.
-* **Text Cleaning Pipeline:** Developed a flexible `preprocessing` function (`text_cleaner`) to handle lowercasing, punctuation/emoji removal, and other user-defined steps.
+* **Text Cleaning Pipeline:** Developed a flexible `preprocessing` function (`text_cleaner`) to handle lowercasing, punctuation/emoji removal and other user-defined steps.
 * **Feature Extraction (Reviews):** Applied Bag of Words (BoW) and TF-IDF (after splitting by rating) for feature extraction. Visualized common words and constructed a network graph of top co-occurring words.
 
 ### 2. Specific Data Preprocessing for Models
